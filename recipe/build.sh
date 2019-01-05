@@ -9,6 +9,9 @@ if [ `uname` == Linux ]; then
     export HELP2MAN=/bin/true
 fi
 
+echo host  is: ${HOST}
+echo build is: ${BUILD}
+
 if [[ ${HOST} =~ .*linux.* ]]; then
     export CC=${GCC}
     # TODO :: Handle cross-compilation properly here

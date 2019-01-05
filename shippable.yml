@@ -41,7 +41,7 @@ build:
     - conda config --add channels archiarm
     - conda build -m .ci_support/${CONFIG}.yaml .
     - export PACKAGE_NAME=`conda build -m .ci_support/${CONFIG}.yaml . --output`
-    - if [[ "$BINSTAR_TOKEN" != "" ]]; then anaconda -t $BINSTAR_TOKEN upload $PACKAGE_NAME ; else echo "BINSTAR_TOKEN not found, package is not being uploaded" ; fi
+    # - if [[ "$BINSTAR_TOKEN" != "" ]]; then anaconda -t $BINSTAR_TOKEN upload $PACKAGE_NAME ; else echo "BINSTAR_TOKEN not found, package is not being uploaded" ; fi
 
 # disable email notification
 # of CI job result
