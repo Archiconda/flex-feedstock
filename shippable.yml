@@ -24,7 +24,7 @@ build:
     # bzip2 is necessary for conda installers to get executed
     # curl is necessary to download them
     # flex is needed because we need to patch flex, which requires flex
-    - apt-get install -y bzip2 curl locales flex
+    - apt-get install -y bzip2 curl locales
     # instaslling locales reduces many warnings
     - locale-gen en_US.UTF-8
     - curl -L -O https://github.com/Archiconda/build-tools/releases/download/0.1.1/Archiconda3-0.1.1-Linux-aarch64.sh
