@@ -18,6 +18,7 @@ fi
             --host=${HOST}      \
             --build=${BUILD}
 
-make -j${CPU_COUNT} ${VERBOSE_AT}
+#make -j${CPU_COUNT} ${VERBOSE_AT}
+make ${VERBOSE_AT}
 make check
 make install
