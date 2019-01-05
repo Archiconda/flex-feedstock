@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('cxx') }}
     - automake
     - m4
+    - make      # [unix]
     - libiconv  # [not linux and not win]
     - help2man  # [not win]
   run:
