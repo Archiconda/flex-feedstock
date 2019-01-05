@@ -18,9 +18,23 @@ if [[ ${HOST} =~ .*linux.* ]]; then
     export CC_FOR_BUILD=${GCC}
 fi
 
-./configure --prefix="$PREFIX"
-            # --host=${HOST}      \
-            # --build=${BUILD}
+
+# The issue is that technically we are cross compiling, we have to figure out
+# how to tell configure that we have a gnu compatible malloc
+# + echo host is: aarch64-conda_cos7-linux-gnu
+# host is: aarch64-conda_cos7-linux-gnu
+# + echo build is: aarch64-conda_cos6-linux-gnu
+# build is: aarch64-conda_cos6-linux-gnu
+
+# checking for GNU libc compatible malloc... no
+# configure: WARNING: result no guessed because of cross compilation
+# checking for stdlib.h... (cached) yes
+# checking for GNU libc compatible realloc... no
+# configure: WARNING: result no guessed because of cross compilation
+
+./configure --prefix="$PREFIX"  \
+            --host=${HOST}      \
+            --build=${BUILD}
 
 make -j${CPU_COUNT} ${VERBOSE_AT}
 make check
