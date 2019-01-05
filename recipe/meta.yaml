@@ -12,6 +12,8 @@ build:
   skip: true  # [win]
   number: 1003
   detect_binary_files_with_prefix: true
+  patches:
+    - 261-include-flexdef-at-to-block-of-scan-l.patch
 
 requirements:
   build:
