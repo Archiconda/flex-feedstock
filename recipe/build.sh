@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 
 # skip the creation of man pages by faking existance of help2man
 if [ `uname` == Darwin ]; then
