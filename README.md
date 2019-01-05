@@ -1,6 +1,8 @@
 About flex
 ==========
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: http://flex.sourceforge.net/
 
 Package license: BSD 2-Clause
@@ -16,6 +18,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/flex-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/flex-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/flex-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/flex-feedstock)
+[![linux-aarch64](https://img.shields.io/shippable//aarch64.svg?label=linux-aarch64)](https://app.shippable.com/github/Archiconda/flex-feedstock)
 ![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
@@ -104,3 +107,10 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@jakirkham](https://github.com/jakirkham/)
+* [@ocefpaf](https://github.com/ocefpaf/)
+
